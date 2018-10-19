@@ -45,7 +45,7 @@ module Sendgrid
       @personalizations : Array(Personalization),
       @from : From,
       @subject : String,
-      @content : Array(Content),
+      @content : Array(Content)? = nil,
       @reply_to : ReplyTo? = nil,
       @attachments : Array(Attachment)? = nil,
       @template_id : String? = nil,
